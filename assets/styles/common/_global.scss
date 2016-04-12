@@ -1,0 +1,64 @@
+body {
+  // padding-top: $nav-height;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+
+section.container-fluid {
+  .row {
+    margin: 0 -30px;
+    @include iphone {
+      margin: 0 -15px;
+    };
+  }
+}
+
+
+nav.navbar {
+  height: $nav-height;
+  @include iphone {
+    height: 50px;
+  };
+  // background: rgba(0, 0, 0, 0);
+  border: none;
+  .navbar-header {
+    a.navbar-brand {
+      position: absolute;;
+      left: 50%;
+      height: 100%;
+      padding: 18px 0;
+      @include iphone {
+        padding: 15px 0;
+      };
+      transform: translateX(-50%);
+      img {
+        height: 100%;
+        @include iphone {
+          height: 100%;
+        };
+      }
+    }
+  }
+  ul {
+    margin-top: 45px;
+    @include iphone {
+      margin-top: 0;
+    };
+    li {
+      text-transform: lowercase;
+      a {
+        padding: 0 20px;
+        @include iphone {
+          padding: 15px;
+          background: #fff;
+        };
+      }
+    }
+  }
+}
