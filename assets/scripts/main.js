@@ -18,6 +18,10 @@
     // All pages
     'common': {
       init: function() {
+        // Testing
+
+
+
         // JavaScript to be fired on all pages
         // if ( $('nav').hasClass('navbar-fixed-top') ) {
         //   $('body').css( 'padding-top', '70px');
@@ -31,7 +35,7 @@
           $('nav a').on( 'click', function(){
             $('section').addClass('slideOutLeft');
           });
-        } else if ( $( 'section' ).hasClass( 'fadeInUp') ) {
+        } else if ( $( 'section' ).hasClass( 'fadeIn') ) {
           $('nav a').on( 'click', function(){
             $('section').addClass('fadeOutDown');
           });
@@ -57,6 +61,13 @@
           });
         }
 
+        if ( $('.img-container').hasClass( 'rollIn' ) ) {
+          $('nav a').on( 'click', function(){
+            $('.img-container').addClass('rollOut');
+          });
+
+        }
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -66,6 +77,18 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+
+        // Adds active class to first img in the list
+        $('.item:first-child').addClass('active');
+
+
+        var slide = $('.item');
+        var list = '.carousel-indicators';
+        for (var i = 0; i < slide.length; i++) {
+          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>')
+          $( '.slideBtn:first-child' ).addClass('active');
+        }
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

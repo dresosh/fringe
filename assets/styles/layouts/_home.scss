@@ -1,8 +1,28 @@
+$social-height: 60px;
+
 section.home-container {
-  background: red;
-  min-height: 500px;
-  ul {
-    list-style-type: none;
-    padding: 0;
+  // background: red;
+  // min-height: 500px;
+  height: 100vh;
+  overflow: hidden;
+  .row {
+    .slideshow {
+      img {
+        height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+
+      }
+    }
   }
+  // .socialbar {
+  //   background: #fff;
+  //   height: $social-height;
+  //   width: 100%;
+  //   img {
+  //     float: right;
+  //     position: relative;
+  //     top: 5px;
+  //   }
+  // }
 }
