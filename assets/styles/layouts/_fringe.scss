@@ -1,0 +1,14 @@
+section.fringe-container {
+  background: url( '../images/Brick_BG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding-top: 100px;
+  .container {
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 1px 1px 5px #838383;
+    .row {
+
+    }
+  }
+}
