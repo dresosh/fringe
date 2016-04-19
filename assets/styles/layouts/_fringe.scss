@@ -7,8 +7,21 @@ section.fringe-container {
   .container {
     background: rgba(255, 255, 255, .8);
     box-shadow: 1px 1px 5px #838383;
+    padding: 30px 0;
     .row {
-
+      h1, h2 , h3, h4, h5 {
+        text-align: center;
+      }
+      p {
+        text-align: justify;
+        font-size: 12px;
+      }
+      hr {
+        height: 1px;
+        background: #000;
+        width: 60%;
+        background-image: linear-gradient(to right, #ccc, #333, #ccc);
+      }
     }
   }
 }
