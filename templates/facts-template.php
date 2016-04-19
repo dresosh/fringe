@@ -16,7 +16,7 @@
       </div>
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
-          <?php $args = array( 'post_type' => 'fact', 'posts_per_page' => 10 ); ?>
+          <?php $args = array( 'post_type' => 'facts', 'posts_per_page' => 10 ); ?>
           <?php $loop = new WP_Query( $args ); ?>
           <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
             <div class="col-md-4 col-sm-4">
@@ -27,7 +27,6 @@
       </div>
       <div class="col-md-offset-2 col-md-8">
           <p class="quote">
-            <?php echo get_field( 'quote' ); ?>
             <?php
               global $wp_query;
               $postid = $wp_query->post->ID;
