@@ -9,6 +9,16 @@ section.facts-container {
     box-shadow: 1px 1px 5px #838383;
     padding: 40px 0;
     .row {
+      .facts-thumb {
+        // background: #000;
+        height: 200px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
       h1 {
         text-align: center;
       }
