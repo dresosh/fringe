@@ -2,9 +2,7 @@ section.facts-container {
   background: red;
   background-image: url( '../images/Brick_BG.jpg');
   background-repeat: repeat;
-  width: 100vw;
-  // background-size: cover;
-  // height: 100vh;
+  min-height: 100vh;
   padding-top: 100px;
   .container {
     background: rgba(255, 255, 255, .8);

@@ -3,6 +3,7 @@
  * Template Name: Fringe
  */
 ?>
+
 <section class="fringe-container animated bounceInLeft">
   <div class="container">
     <?php $args = array( 'post_type' => 'fringe', 'posts_per_page' => -1 ); ?>
@@ -10,7 +11,7 @@
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class="row">
         <div class="col-md-offset-2 col-md-8">
-          <h5><?php the_date(); ?></h5>
+          <h5><?php the_time( get_option( 'date_format' ) ); ?></h5>
           <h3><?php the_title(); ?></h3>
           <br>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -38,18 +39,18 @@
           </div>
 
           <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
           <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-          </a>
+          </a> -->
         </div>
         <br>
         <p>
-          <?php echo get_field('blog'); ?>
+          <?php echo get_field('preview'); ?>
         </p>
         <br>
         <a href=<?php the_permalink(); ?>><button class="btn btn-default" type="button" name="button">Read More</button></a>

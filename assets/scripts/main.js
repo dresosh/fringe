@@ -19,7 +19,16 @@
     'common': {
       init: function() {
         // Testing
+        // Adds active class to first img in the list
+        $('.item:first-child').addClass('active');
 
+
+        var slide = $('.item');
+        var list = '.carousel-indicators';
+        for ( var i = 0; i < slide.length; i++ ) {
+          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>')
+          $( '.slideBtn:first-child' ).addClass('active');
+        }
 
 
         // JavaScript to be fired on all pages
