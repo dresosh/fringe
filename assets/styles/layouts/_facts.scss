@@ -1,8 +1,10 @@
 section.facts-container {
-  background: url( '../images/Brick_BG.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+  background: red;
+  background-image: url( '../images/Brick_BG.jpg');
+  background-repeat: repeat;
+  width: 100vw;
+  // background-size: cover;
+  // height: 100vh;
   padding-top: 100px;
   .container {
     background: rgba(255, 255, 255, .8);
@@ -14,6 +16,7 @@ section.facts-container {
         height: 200px;
         overflow: hidden;
         margin-bottom: 30px;
+        cursor: pointer;
         img {
           height: 100%;
           width: 100%;

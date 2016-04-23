@@ -5,7 +5,7 @@
 ?>
 <section class="fringe-container animated bounceInLeft">
   <div class="container">
-    <?php $args = array( 'post_type' => 'fringe', 'posts_per_page' => 10 ); ?>
+    <?php $args = array( 'post_type' => 'fringe', 'posts_per_page' => -1 ); ?>
     <?php $loop = new WP_Query( $args ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class="row">
@@ -52,7 +52,7 @@
           <?php echo get_field('blog'); ?>
         </p>
         <br>
-        <h4>Read More</h4>
+        <a href=<?php the_permalink(); ?>><button class="btn btn-default" type="button" name="button">Read More</button></a>
         <hr>
       </div>
     </div>

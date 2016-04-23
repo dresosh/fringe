@@ -104,7 +104,7 @@
 
         var slide = $('.item');
         var list = '.carousel-indicators';
-        for (var i = 0; i < slide.length; i++) {
+        for ( var i = 0; i < slide.length; i++ ) {
           $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>')
           $( '.slideBtn:first-child' ).addClass('active');
         }
