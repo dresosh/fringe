@@ -38,6 +38,7 @@ section.fringe-container {
           left: 50%;
           transform: translateX(-50%);
           font-style: italic;
+          font-size: 16px;
           &:hover {
             color: $hover;
           }

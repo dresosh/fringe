@@ -9,17 +9,23 @@ section.fringe-post-container {
     box-shadow: 1px 1px 5px #838383;
     padding: 30px;
     .row {
-      margin: 0 -15px;      
+      margin: 0 -15px;
       .social {
         width: 200px;
         margin: 0 auto;
       }
       a {
         button {
-          border: 1px solid #b6b6b6;
+          background: transparent;
           position: relative;
           left: 50%;
           transform: translateX(-50%);
+          border: none;
+          font-style: italic;
+          font-size: 16px;
+          &:hover {
+            color: $hover;
+          }
         }
 
       }
