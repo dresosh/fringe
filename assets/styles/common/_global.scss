@@ -25,7 +25,7 @@ body {
 
 // 30px padding for mobile
 .row {
-  @include iphone {
+  @include mobile {
     margin: 0 15px;
   };
 }
