@@ -19,7 +19,7 @@
 
         <!-- Carousel -->
         <?php if ( get_field('gallery')) :?>
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div id="carousel-<?php global $post; echo $post->post_name; ?>" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <!-- <ol class="carousel-indicators"> -->
               <!-- Slide Buttons go here -->
@@ -40,11 +40,11 @@
           </div>
 
           <!-- Controls -->
-          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <a class="left carousel-control" href="#carousel-<?php global $post; echo $post->post_name; ?>" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <a class="right carousel-control" href="#carousel-<?php global $post; echo $post->post_name; ?>" role="button" data-slide="next">
             <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
