@@ -14,6 +14,7 @@
           <h5><?php the_time( get_option( 'date_format' ) ); ?></h5>
           <h3><?php the_title(); ?></h3>
           <br>
+
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <!-- <ol class="carousel-indicators"> -->
@@ -38,15 +39,6 @@
 
           </div>
 
-          <!-- Controls -->
-          <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a> -->
         </div>
         <br>
         <p>
@@ -54,6 +46,9 @@
         </p>
         <br>
         <a href=<?php the_permalink(); ?>><button class="btn btn-default" type="button" name="button">Read More</button></a>
+        <div class="social">
+          <?php the_excerpt(); ?>
+        </div>
         <hr>
       </div>
     </div>

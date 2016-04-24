@@ -9,6 +9,10 @@ section.fringe-container {
     box-shadow: 1px 1px 5px #838383;
     padding: 30px 0;
     .row {
+      .social {
+        width: 200px;
+        margin: 0 auto;
+      }
       #carousel-example-generic {
         .carousel-inner {
           .item {

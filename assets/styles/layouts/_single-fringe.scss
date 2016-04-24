@@ -8,5 +8,18 @@ section.fringe-post-container {
     background: rgba(255, 255, 255, .8);
     box-shadow: 1px 1px 5px #838383;
     padding: 30px;
+    .social {
+      width: 200px;
+      margin: 0 auto;
+    }
+    a {
+      button {
+        border: 1px solid #b6b6b6;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+    }
   }
 }
