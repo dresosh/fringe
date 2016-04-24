@@ -14,9 +14,9 @@
     <div class="slideshow col-md-12 no-padding">
       <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
-        <ol class="carousel-indicators">
+        <!-- <ol class="carousel-indicators"> -->
           <!-- Slide Buttons go here -->
-        </ol>
+        <!-- </ol> -->
 
         <!-- Wrapper for slides -->
         <div class="carousel-inner" role="listbox">

@@ -103,6 +103,25 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
+    // Facts page
+    'facts': {
+      init: function() {
+        // JavaScript to be fired on the home page
+
+        // Removes http:// from each link and prints it on page
+        var urls = $('.web-url')
+        for (var i = 0; i < urls.length; i++) {
+          var url = urls[i]
+          inner = $(url).html()
+          newUrls = inner.substr(7)
+          $(url).html(newUrls)
+        }
+
+      },
+      finalize: function() {
+        // JavaScript to be fired on the home page, after the init JS
+      }
+    },
     // Fringe page
     'blog': {
       init: function() {

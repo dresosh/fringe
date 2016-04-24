@@ -21,9 +21,9 @@
         <?php if ( get_field('gallery')) :?>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ol class="carousel-indicators">
+            <!-- <ol class="carousel-indicators"> -->
               <!-- Slide Buttons go here -->
-            </ol>
+            <!-- </ol> -->
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
@@ -57,7 +57,7 @@
       </p>
 
       <!-- Website -->
-      <a class="web-btn" href="<?php echo get_field('website'); ?>" target="_blank"><h4><?php echo get_field('website'); ?></h4></a>
+      <a class="web-btn" href="<?php echo get_field('website'); ?>" target="_blank"><h4 class="web-url"><?php echo get_field('website'); ?></h4></a>
       </div>
     </div>
   </div>
