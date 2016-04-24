@@ -32,10 +32,15 @@ section.fringe-container {
       }
       a {
         button {
-          border: 1px solid #b6b6b6;
+          border: none;
+          background: transparent;
           position: relative;
           left: 50%;
           transform: translateX(-50%);
+          font-style: italic;
+          &:hover {
+            color: $hover;
+          }
         }
 
       }
