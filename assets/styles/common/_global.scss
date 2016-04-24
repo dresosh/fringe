@@ -14,14 +14,23 @@ body {
 }
 
 // Removes outer padding on desktop and adds padding on mobile
-section.container-fluid {
-  .row {
-    margin: 0 -30px;
-    @include iphone {
-      margin: 0 -15px;
-    };
-  }
+// section.container-fluid {
+//   .row {
+//     margin: 0 -30px;
+//     @include iphone {
+//       margin: 0 -15px;
+//     };
+//   }
+// }
+
+// 30px padding for mobile
+.row {
+  @include iphone {
+    margin: 0 15px;
+  };
 }
+
+
 
 // Navbar
 nav.navbar {
@@ -103,4 +112,8 @@ h1, h2, h3, h4, h5, h6, p {
 .heading {
   text-decoration: underline;
   font-size: 29px;
+}
+
+* {
+  // border: 1px solid red;
 }
