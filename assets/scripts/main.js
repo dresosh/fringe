@@ -40,6 +40,9 @@
           $('nav a').on( 'click', function(){
             $('section').addClass('slideOutRight');
           });
+          $('.read-more').on( 'click', function(){
+            $('section').addClass('slideOutRight');
+          });
         } else if ( $( 'section' ).hasClass( 'bounceInRight') ) {
           $('nav a').on( 'click', function(){
             $('section').addClass('slideOutLeft');
@@ -64,18 +67,22 @@
           $('nav a').on( 'click', function(){
             $('section').addClass('rollOut');
           });
+          $('.back-btn').on( 'click', function(){
+            $('section').addClass('rollOut');
+          });
         } else if ( $( 'section' ).hasClass( 'bounceIn') ) {
           $('nav a').on( 'click', function(){
             $('section').addClass('bounceOut');
           });
         }
 
-        if ( $('.img-container').hasClass( 'rollIn' ) ) {
-          $('nav a').on( 'click', function(){
-            $('.img-container').addClass('rollOut');
-          });
 
-        }
+        // if ( $('.img-container').hasClass( 'rollIn' ) ) {
+        //   $('nav a').on( 'click', function(){
+        //     $('.img-container').addClass('rollOut');
+        //   });
+        // }
+
 
       },
       finalize: function() {

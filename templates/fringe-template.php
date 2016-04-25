@@ -45,7 +45,7 @@
           <?php echo get_field('preview'); ?>
         </p>
         <br>
-        <a href=<?php the_permalink(); ?>><button class="btn btn-default" type="button" name="button">Read More</button></a>
+        <a href=<?php the_permalink(); ?>><button class="btn btn-default read-more" type="button" name="button">Read More</button></a>
         <div class="social">
           <?php the_excerpt(); ?>
         </div>

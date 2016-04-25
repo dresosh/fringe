@@ -7,14 +7,16 @@
 
         <!-- Blog Paragraph -->
         <?php if ( get_field('blog') ): ?>
-          <p>
-            <?php echo get_field('blog'); ?>
-          </p>
+          <div class="animated fadeInDown">
+            <p>
+              <?php echo get_field('blog'); ?>
+            </p>
+          </div>
         <?php endif ?>
 
         <!-- Carousel -->
         <?php if (get_field('gallery')):?>
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div id="carousel-example-generic" class="animated fadeInUp carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <!-- <ol class="carousel-indicators"> -->
             <!-- Slide Buttons go here -->
@@ -53,7 +55,7 @@
       <div class="social">
         <?php the_excerpt(); ?>
       </div>
-      <a href="/fringe/blog"><button class="btn btn-default" type="button" name="button">Back</button></a>
+      <a href="/fringe/blog"><button class="btn btn-default back-btn" type="button" name="button">Back</button></a>
 
 
       </div>
