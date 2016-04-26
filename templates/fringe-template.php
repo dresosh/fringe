@@ -30,7 +30,9 @@
 
               <?php foreach( $images as $image ): ?>
                 <div class="item">
-                  <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                  <a href="<?php the_permalink(); ?>">                    
+                    <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+                  </a>
                   <!-- <p><?php echo $image['caption']; ?></p> -->
                 </div>
               <?php endforeach; ?>
@@ -52,6 +54,7 @@
         <hr>
       </div>
     </div>
+
     <?php endwhile; ?>
 
   </div>

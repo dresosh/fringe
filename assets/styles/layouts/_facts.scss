@@ -19,6 +19,9 @@
           max-height: 50vh;
           max-width: 30vw;
           margin: 0 auto;
+          @include iphone {
+            max-width: 75vw;
+          };
         }
         p {
           padding: 20px 20px 0 20px;
@@ -46,10 +49,11 @@ section.facts-container {
   .container {
     background: rgba(255, 255, 255, .8);
     box-shadow: 1px 1px 5px #838383;
-    padding: 40px 0;
+    padding: 30px 0;
+    margin-bottom: 20px;
     .row {
       .row {
-        margin: 0 -15px;        
+        margin: 0 -15px;
         .facts-thumb {
           // background: #000;
           height: 200px;
@@ -67,6 +71,7 @@ section.facts-container {
       }
       p {
         text-align: justify;
+        padding-bottom: 20px;
       }
       hr {
         height: 1px;
@@ -77,10 +82,11 @@ section.facts-container {
       }
       h3 {
         text-align: center;
+        padding: 30px 0 40px 0;
       }
       .quote {
         text-align: center;
-        margin-top: 30px;
+        margin-top: 40px;
       }
       .author {
         text-align: center;
