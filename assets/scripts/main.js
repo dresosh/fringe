@@ -26,7 +26,7 @@
         var slide = $('.item');
         var list = '.carousel-indicators';
         for ( var i = 0; i < slide.length; i++ ) {
-          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>')
+          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>');
           $( '.slideBtn:first-child' ).addClass('active');
         }
 
@@ -101,7 +101,7 @@
         var slide = $('.item');
         var list = '.carousel-indicators';
         for (var i = 0; i < slide.length; i++) {
-          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>')
+          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>');
           $( '.slideBtn:first-child' ).addClass('active');
         }
 
@@ -116,12 +116,12 @@
         // JavaScript to be fired on the home page
 
         // Removes http:// from each link and prints it on page
-        var urls = $('.web-url')
+        var urls = $('.web-url');
         for (var i = 0; i < urls.length; i++) {
-          var url = urls[i]
-          inner = $(url).html()
-          newUrls = inner.substr(7)
-          $(url).html(newUrls)
+          var url = urls[i];
+          inner = $(url).html();
+          newUrls = inner.substr(7);
+          $(url).html(newUrls);
         }
 
       },
@@ -140,7 +140,7 @@
         var slide = $('.item');
         var list = '.carousel-indicators';
         for ( var i = 0; i < slide.length; i++ ) {
-          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>')
+          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>');
           $( '.slideBtn:first-child' ).addClass('active');
         }
 
