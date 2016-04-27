@@ -14,12 +14,25 @@ body {
 }
 
 
-
 // 30px padding for mobile
 .row {
   @include mobile {
     margin: 0 15px;
   };
+}
+
+
+// Navbar fadein
+@keyframes navfade {
+  from { background: transparent;}
+  to { background: $white;}
+}
+
+
+.navfade {
+  animation-name: navfade;
+  animation-duration: .8s;
+  animation-fill-mode: forwards;
 }
 
 
@@ -42,8 +55,8 @@ nav.navbar {
   @include iphone {
     height: 50px;
   };
-  background: transparent;
   border: none;
+  background: transparent;
   .navbar-header {
     a.navbar-brand {
       position: absolute;;
@@ -57,7 +70,7 @@ nav.navbar {
       img {
         height: 100%;
         @include iphone {
-          height: 100%;
+          height: 70%;
         };
       }
     }

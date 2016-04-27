@@ -18,6 +18,24 @@
     // All pages
     'common': {
       init: function() {
+        // Navbar animation-name
+        $('nav').on('mouseover', function() {
+          $('nav').addClass('navfade');
+        });
+        $('nav').on('mouseleave', function() {
+          $('nav').removeClass('navfade');
+        });
+
+
+        $(window).scroll(function() {
+          if ( $('.navbar').offset().top > 100 ) {
+            $('nav').addClass('navfade');
+          } else {
+            $('nav').removeClass('navfade');
+          }
+        });
+
+
         // Testing
         // Adds active class to first img in the list
         $('.item:first-child').addClass('active');
