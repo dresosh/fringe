@@ -11,6 +11,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/fringe"><img src="<?php echo get_template_directory_uri(); ?>/dist/images/FB_Logo.png" alt="" /></a>
+          <a href="https://www.instagram.com/thefringebenefit/" target="_blank"><img class="ig-icon" src="<?php echo get_template_directory_uri(); ?>/dist/images/IG_ico.png" alt="" /></a>
         </div>
       <?php
       if (has_nav_menu('primary_navigation')) :

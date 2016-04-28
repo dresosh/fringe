@@ -21,6 +21,33 @@ body {
   };
 }
 
+// Instagram icon-navbar
+.ig-icon {
+  position: absolute;
+  right: 1060px;
+  top: 10px;
+  opacity: 0;
+}
+
+// Instagram animation
+@keyframes ig-fade {
+  0% {
+    right: 1060px;
+    opacity: 0;
+  }
+  100% {
+    right: 60px;
+    opacity: 1;
+  }
+}
+
+
+.ig-fadeIn {
+  animation-name: ig-fade;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+}
+
 
 // Navbar fadein
 @keyframes navfade {

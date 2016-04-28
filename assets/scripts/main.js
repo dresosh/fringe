@@ -21,17 +21,21 @@
         // Navbar animation-name
         $('nav').on('mouseover', function() {
           $('nav').addClass('navfade');
+          // $('.ig-icon').addClass('ig-fadeIn');
         });
         $('nav').on('mouseleave', function() {
           $('nav').removeClass('navfade');
+          // $('.ig-icon').removeClass('ig-fadeIn');
         });
 
 
         $(window).scroll(function() {
           if ( $('.navbar').offset().top > 100 ) {
             $('nav').addClass('navfade');
+            $('.ig-icon').addClass('ig-fadeIn');
           } else {
             $('nav').removeClass('navfade');
+            $('.ig-icon').removeClass('ig-fadeIn');
           }
         });
 
