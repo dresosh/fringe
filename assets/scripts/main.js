@@ -21,11 +21,11 @@
         // Navbar animation-name
         $('nav').on('mouseover', function() {
           $('nav').addClass('navfade');
-          // $('.ig-icon').addClass('ig-fadeIn');
+          $('.ig-icon').addClass('ig-fadeIn');
         });
         $('nav').on('mouseleave', function() {
           $('nav').removeClass('navfade');
-          // $('.ig-icon').removeClass('ig-fadeIn');
+          $('.ig-icon').removeClass('ig-fadeIn');
         });
 
 
@@ -114,6 +114,19 @@
     // Home page
     'home': {
       init: function() {
+        // Disables carousel pause on hover
+        $('.carousel').carousel({
+            pause: "false"
+        });
+
+        // Pauses carousel when hovering over arrows
+        $('.carousel-control').on('mouseover', function(){
+          $('.carousel').carousel('pause');
+        })
+        $('.carousel-control').on('mouseleave', function(){
+          $('.carousel').carousel('cycle');
+        })
+
         // JavaScript to be fired on the home page
 
         // Adds active class to first img in the list
