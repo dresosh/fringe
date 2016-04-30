@@ -10,7 +10,7 @@
  * always reference jQuery with $, even when in .noConflict() mode.
  * ======================================================================== */
 
-(function($) {
+(function( $) {
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
@@ -18,90 +18,101 @@
     // All pages
     'common': {
       init: function() {
-        // Navbar animation-name
-        $('nav').on('mouseover', function() {
-          $('nav').addClass('navfade');
-          $('.ig-icon').addClass('ig-fadeIn');
+        // Navbar animation on hover
+        $( 'nav' ).on( 'mouseover', function() {
+          $( 'nav' ).addClass( 'navfade' );
+          $( '.ig-icon' ).addClass( 'ig-fadeIn' );
         });
-        $('nav').on('mouseleave', function() {
-          $('nav').removeClass('navfade');
-          $('.ig-icon').removeClass('ig-fadeIn');
+        $( 'nav' ).on( 'mouseleave', function() {
+          $( 'nav' ).removeClass( 'navfade' );
+          $( '.ig-icon' ).removeClass( 'ig-fadeIn' );
         });
 
-
+        // Animation on scroll
         $(window).scroll(function() {
-          if ( $('.navbar').offset().top > 100 ) {
-            $('nav').addClass('navfade');
-            $('.ig-icon').addClass('ig-fadeIn');
+          if ( $( '.navbar' ).offset().top > 100 ) {
+            $( 'nav' ).addClass( 'navfade' );
+            $( '.ig-icon' ).addClass( 'ig-fadeIn' );
           } else {
-            $('nav').removeClass('navfade');
-            $('.ig-icon').removeClass('ig-fadeIn');
+            $( 'nav' ).removeClass( 'navfade' );
+            $( '.ig-icon' ).removeClass( 'ig-fadeIn' );
           }
         });
+
+        // Navbar active state
+        if ( $( 'body' ).hasClass( 'facts' ) ) {
+          $('.menu-item-18').addClass('current')
+        } else if ( $( 'body' ).hasClass( 'found' ) ) {
+          $('.menu-item-15').addClass('current')
+        } else if ( $( 'body' ).hasClass( 'blog' ) ) {
+          $('.menu-item-74').addClass('current')
+        } else if ( $( 'body' ).hasClass( 'single-fringe' ) ) {
+          $('.menu-item-74').addClass('current')
+        }
 
 
         // Testing
         // Adds active class to first img in the list
-        $('.item:first-child').addClass('active');
+        $( '.item:first-child' ).addClass( 'active' );
 
 
-        var slide = $('.item');
+        var slide = $( '.item' );
         var list = '.carousel-indicators';
         for ( var i = 0; i < slide.length; i++ ) {
-          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>');
-          $( '.slideBtn:first-child' ).addClass('active');
+          $( list ).append( '<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>' );
+          $( '.slideBtn:first-child' ).addClass( 'active' );
         }
 
 
         // JavaScript to be fired on all pages
-        // if ( $('nav').hasClass('navbar-fixed-top') ) {
-        //   $('body').css( 'padding-top', '70px');
+        // if ( $( 'nav' ).hasClass( 'navbar-fixed-top' ) ) {
+        //   $( 'body' ).css( 'padding-top', '70px' );
         // }
 
-        if ( $( 'section' ).hasClass( 'bounceInLeft') ) {
-          $('nav a').on( 'click', function(){
-            $('section').addClass('slideOutRight');
+        if ( $( 'section' ).hasClass( 'bounceInLeft' ) ) {
+          $( 'nav a' ).on( 'click', function(){
+            $( 'section' ).addClass( 'slideOutRight' );
           });
-          $('.read-more').on( 'click', function(){
-            $('section').addClass('slideOutRight');
+          $( '.read-more' ).on( 'click', function(){
+            $( 'section' ).addClass( 'slideOutRight' );
           });
-        } else if ( $( 'section' ).hasClass( 'bounceInRight') ) {
-          $('nav a').on( 'click', function(){
-            $('section').addClass('slideOutLeft');
+        } else if ( $( 'section' ).hasClass( 'bounceInRight' ) ) {
+          $( 'nav a' ).on( 'click', function(){
+            $( 'section' ).addClass( 'slideOutLeft' );
           });
-        } else if ( $( 'section' ).hasClass( 'fadeIn') ) {
-          $('nav a').on( 'click', function(){
-            $('section').addClass('fadeOutDown');
+        } else if ( $( 'section' ).hasClass( 'fadeIn' ) ) {
+          $( 'nav a' ).on( 'click', function(){
+            $( 'section' ).addClass( 'fadeOutDown' );
           });
-        } else if ( $( 'section' ).hasClass( 'bounceInUp') ) {
-          $('nav a').on( 'click', function(){
-            $('section').addClass('fadeOutDownBig');
+        } else if ( $( 'section' ).hasClass( 'bounceInUp' ) ) {
+          $( 'nav a' ).on( 'click', function(){
+            $( 'section' ).addClass( 'fadeOutDownBig' );
           });
-        } else if ( $( 'section' ).hasClass( 'flipInY') ) {
-          $('nav a').on( 'click', function(){
-            $('section').addClass('flipOutY');
+        } else if ( $( 'section' ).hasClass( 'flipInY' ) ) {
+          $( 'nav a' ).on( 'click', function(){
+            $( 'section' ).addClass( 'flipOutY' );
           });
-        } else if ( $( 'section' ).hasClass( 'zoomIn') ) {
-          $('nav a').on( 'click', function(){
-            $('section').addClass('zoomOut');
+        } else if ( $( 'section' ).hasClass( 'zoomIn' ) ) {
+          $( 'nav a' ).on( 'click', function(){
+            $( 'section' ).addClass( 'zoomOut' );
           });
-        } else if ( $( 'section' ).hasClass( 'rollIn') ) {
-          $('nav a').on( 'click', function(){
-            $('section').addClass('rollOut');
+        } else if ( $( 'section' ).hasClass( 'rollIn' ) ) {
+          $( 'nav a' ).on( 'click', function(){
+            $( 'section' ).addClass( 'rollOut' );
           });
-          $('.back-btn').on( 'click', function(){
-            $('section').addClass('rollOut');
+          $( '.back-btn' ).on( 'click', function(){
+            $( 'section' ).addClass( 'rollOut' );
           });
-        } else if ( $( 'section' ).hasClass( 'bounceIn') ) {
-          $('nav a').on( 'click', function(){
-            $('section').addClass('bounceOut');
+        } else if ( $( 'section' ).hasClass( 'bounceIn' ) ) {
+          $( 'nav a' ).on( 'click', function(){
+            $( 'section' ).addClass( 'bounceOut' );
           });
         }
 
 
-        // if ( $('.img-container').hasClass( 'rollIn' ) ) {
-        //   $('nav a').on( 'click', function(){
-        //     $('.img-container').addClass('rollOut');
+        // if ( $( '.img-container' ).hasClass( 'rollIn' ) ) {
+        //   $( 'nav a' ).on( 'click', function(){
+        //     $( '.img-container' ).addClass( 'rollOut' );
         //   });
         // }
 
@@ -115,29 +126,29 @@
     'home': {
       init: function() {
         // Disables carousel pause on hover
-        $('.carousel').carousel({
+        $( '.carousel' ).carousel({
             pause: "false"
         });
 
         // Pauses carousel when hovering over arrows
-        $('.carousel-control').on('mouseover', function(){
-          $('.carousel').carousel('pause');
+        $( '.carousel-control' ).on( 'mouseover', function(){
+          $( '.carousel' ).carousel( 'pause' );
         })
-        $('.carousel-control').on('mouseleave', function(){
-          $('.carousel').carousel('cycle');
+        $( '.carousel-control' ).on( 'mouseleave', function(){
+          $( '.carousel' ).carousel( 'cycle' );
         })
 
         // JavaScript to be fired on the home page
 
         // Adds active class to first img in the list
-        $('.item:first-child').addClass('active');
+        $( '.item:first-child' ).addClass( 'active' );
 
 
-        var slide = $('.item');
+        var slide = $( '.item' );
         var list = '.carousel-indicators';
         for (var i = 0; i < slide.length; i++) {
-          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>');
-          $( '.slideBtn:first-child' ).addClass('active');
+          $( list ).append( '<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>' );
+          $( '.slideBtn:first-child' ).addClass( 'active' );
         }
 
       },
@@ -151,7 +162,7 @@
         // JavaScript to be fired on the home page
 
         // Removes http:// from each link and prints it on page
-        var urls = $('.web-url');
+        var urls = $( '.web-url' );
         for (var i = 0; i < urls.length; i++) {
           var url = urls[i];
           inner = $(url).html();
@@ -169,14 +180,14 @@
       init: function() {
         // JavaScript to be fired on the home page
         // Adds active class to first img in the list
-        $('.item:first-child').addClass('active');
+        $( '.item:first-child' ).addClass( 'active' );
 
 
-        var slide = $('.item');
+        var slide = $( '.item' );
         var list = '.carousel-indicators';
         for ( var i = 0; i < slide.length; i++ ) {
-          $( list ).append('<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>');
-          $( '.slideBtn:first-child' ).addClass('active');
+          $( list ).append( '<li class="slideBtn" data-target="#carousel-example-generic" data-slide-to="' + i + '" ></li>' );
+          $( '.slideBtn:first-child' ).addClass( 'active' );
         }
 
       },
@@ -209,16 +220,16 @@
     },
     loadEvents: function() {
       // Fire common init JS
-      UTIL.fire('common');
+      UTIL.fire( 'common' );
 
       // Fire page-specific init JS, and then finalize JS
-      $.each(document.body.className.replace(/-/g, '_').split(/\s+/), function(i, classnm) {
+      $.each(document.body.className.replace(/-/g, '_' ).split(/\s+/), function(i, classnm) {
         UTIL.fire(classnm);
-        UTIL.fire(classnm, 'finalize');
+        UTIL.fire(classnm, 'finalize' );
       });
 
       // Fire common finalize JS
-      UTIL.fire('common', 'finalize');
+      UTIL.fire( 'common', 'finalize' );
     }
   };
 

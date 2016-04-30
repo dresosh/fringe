@@ -62,7 +62,9 @@ body {
   animation-fill-mode: forwards;
 }
 
-
+.current {
+  font-weight: bold;
+}
 
 // Navbar
 nav.navbar {
@@ -72,7 +74,7 @@ nav.navbar {
       a {
         color: $black;
         &:hover {
-          color: $hover;
+          font-weight: bold;
         }
       }
     }
