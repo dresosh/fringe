@@ -18,6 +18,23 @@
     // All pages
     'common': {
       init: function() {
+        if (screen.width < 768){
+          // Navbar animation on hover
+          $( 'nav' ).on( 'mouseover', function() {
+            $( 'nav' ).addClass( 'navfade' );
+          });
+          $( 'nav' ).on( 'mouseleave', function() {
+            $( 'nav' ).removeClass( 'navfade' );
+          });
+          // Animation on scroll
+          $(window).scroll(function() {
+            if ( $( '.navbar' ).offset().top > 100 ) {
+              $( 'nav' ).addClass( 'navfade' );
+            } else {
+              $( 'nav' ).removeClass( 'navfade' );
+            }
+          });
+      } else {
         // Navbar animation on hover
         $( 'nav' ).on( 'mouseover', function() {
           $( 'nav' ).addClass( 'navfade' );
@@ -27,7 +44,6 @@
           $( 'nav' ).removeClass( 'navfade' );
           $( '.ig-icon' ).removeClass( 'ig-fadeIn' );
         });
-
         // Animation on scroll
         $(window).scroll(function() {
           if ( $( '.navbar' ).offset().top > 100 ) {
@@ -38,6 +54,8 @@
             $( '.ig-icon' ).removeClass( 'ig-fadeIn' );
           }
         });
+      }
+
 
         // Navbar active state
         if ( $( 'body' ).hasClass( 'facts' ) ) {
