@@ -41,13 +41,13 @@
 
         // Navbar active state
         if ( $( 'body' ).hasClass( 'facts' ) ) {
-          $('.menu-item-18').addClass('current')
+          $('.menu-item-18').addClass('current');
         } else if ( $( 'body' ).hasClass( 'found' ) ) {
-          $('.menu-item-15').addClass('current')
+          $('.menu-item-15').addClass('current');
         } else if ( $( 'body' ).hasClass( 'blog' ) ) {
-          $('.menu-item-74').addClass('current')
+          $('.menu-item-74').addClass('current');
         } else if ( $( 'body' ).hasClass( 'single-fringe' ) ) {
-          $('.menu-item-74').addClass('current')
+          $('.menu-item-74').addClass('current');
         }
 
 
@@ -133,10 +133,10 @@
         // Pauses carousel when hovering over arrows
         $( '.carousel-control' ).on( 'mouseover', function(){
           $( '.carousel' ).carousel( 'pause' );
-        })
+        });
         $( '.carousel-control' ).on( 'mouseleave', function(){
           $( '.carousel' ).carousel( 'cycle' );
-        })
+        });
 
         // JavaScript to be fired on the home page
 
