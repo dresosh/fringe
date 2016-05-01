@@ -1,23 +1,23 @@
 <?php
 
-namespace Roots\Sage\Wrapper;
+namespace Roots\Item9\Wrapper;
 
 /**
  * Theme wrapper
  *
- * @link https://roots.io/sage/docs/theme-wrapper/
+ * @link https://roots.io/item9/docs/theme-wrapper/
  * @link http://scribu.net/wordpress/theme-wrappers.html
  */
 
 function template_path() {
-  return SageWrapping::$main_template;
+  return Item9Wrapping::$main_template;
 }
 
 function sidebar_path() {
-  return new SageWrapping('templates/sidebar.php');
+  return new Item9Wrapping('templates/sidebar.php');
 }
 
-class SageWrapping {
+class Item9Wrapping {
   // Stores the full path to the main template file
   public static $main_template;
 
@@ -41,7 +41,7 @@ class SageWrapping {
   }
 
   public function __toString() {
-    $this->templates = apply_filters('sage/wrap_' . $this->slug, $this->templates);
+    $this->templates = apply_filters('item9/wrap_' . $this->slug, $this->templates);
     return locate_template($this->templates);
   }
 
@@ -58,7 +58,7 @@ class SageWrapping {
       self::$base = false;
     }
 
-    return new SageWrapping();
+    return new Item9Wrapping();
   }
 }
-add_filter('template_include', [__NAMESPACE__ . '\\SageWrapping', 'wrap'], 109);
+add_filter('template_include', [__NAMESPACE__ . '\\Item9Wrapping', 'wrap'], 109);

@@ -172,7 +172,7 @@ gulp.task('styles', ['wiredep'], function() {
     var cssTasksInstance = cssTasks(dep.name);
     if (!enabled.failStyleTask) {
       cssTasksInstance.on('error', function(err) {
-        console.error(err.message);
+        console.error(err.mesitem9);
         this.emit('end');
       });
     }

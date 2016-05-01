@@ -1,12 +1,12 @@
-# [Sage](https://roots.io/sage/)
-[![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
-[![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
+# [Item9](https://roots.io/item9/)
+[![Build Status](https://travis-ci.org/roots/item9.svg)](https://travis-ci.org/roots/item9)
+[![devDependency Status](https://david-dm.org/roots/item9/dev-status.svg)](https://david-dm.org/roots/item9#info=devDependencies)
 
-Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
+Item9 is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Bootstrap Sass, that will help you make better themes.
 
-* Source: [https://github.com/roots/sage](https://github.com/roots/sage)
-* Homepage: [https://roots.io/sage/](https://roots.io/sage/)
-* Documentation: [https://roots.io/sage/docs/](https://roots.io/sage/docs/)
+* Source: [https://github.com/roots/item9](https://github.com/roots/item9)
+* Homepage: [https://roots.io/item9/](https://roots.io/item9/)
+* Documentation: [https://roots.io/item9/docs/](https://roots.io/item9/docs/)
 * Twitter: [@rootswp](https://twitter.com/rootswp)
 * Newsletter: [Subscribe](http://roots.io/subscribe/)
 * Forum: [https://discourse.roots.io/](https://discourse.roots.io/)
@@ -29,10 +29,10 @@ For more installation notes, refer to the [Install gulp and Bower](#install-gulp
 * [Bower](http://bower.io/) for front-end package management
 * [asset-builder](https://github.com/austinpray/asset-builder) for the JSON file based asset pipeline
 * [Bootstrap](http://getbootstrap.com/)
-* [Theme wrapper](https://roots.io/sage/docs/theme-wrapper/)
+* [Theme wrapper](https://roots.io/item9/docs/theme-wrapper/)
 * ARIA roles and microformats
 * Posts use the [hNews](http://microformats.org/wiki/hnews) microformat
-* [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/sage-translations)
+* [Multilingual ready](https://roots.io/wpml/) and over 30 available [community translations](https://github.com/roots/item9-translations)
 
 Install the [Soil](https://github.com/roots/soil) plugin to enable additional features:
 
@@ -51,12 +51,12 @@ Bottom line is you want to get the files in this repo into your local developmen
 
 ### via Command-line
 
-If you're already [using Composer to manage WordPress](https://roots.io/using-composer-with-wordpress/), then you might consider using composer's `create-project` command to download Sage.
+If you're already [using Composer to manage WordPress](https://roots.io/using-composer-with-wordpress/), then you might consider using composer's `create-project` command to download Item9.
 
 The example below assumes you're using Bedrock. If you're not, simply change the target path accordingly.
 
 ```sh
-composer create-project roots/sage web/app/themes/your-theme-name-here
+composer create-project roots/item9 web/app/themes/your-theme-name-here
 ```
 
 Then activate the theme via [wp-cli](http://wp-cli.org/commands/theme/activate/).
@@ -67,7 +67,7 @@ wp theme activate your-theme-name-here
 
 ### via WordPress Admin Panel
 
-1. [Download the latest release](https://github.com/roots/sage/releases/latest) of Sage.
+1. [Download the latest release](https://github.com/roots/item9/releases/latest) of Item9.
 2. In your WordPress admin panel, navigate to Appearance->Themes
 3. Click Add New
 4. Click Upload Theme
@@ -79,7 +79,7 @@ Edit `lib/setup.php` to enable or disable theme features, setup navigation menus
 
 ## Theme development
 
-Sage uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
+Item9 uses [gulp](http://gulpjs.com/) as its build system and [Bower](http://bower.io/) to manage front-end packages.
 
 ### Install gulp and Bower
 
@@ -122,7 +122,7 @@ If your local development URL looks like `http://localhost:8888/project-name/` y
 
 ## Documentation
 
-Sage documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
+Item9 documentation is available at [https://roots.io/item9/docs/](https://roots.io/item9/docs/).
 
 ## Contributing
 

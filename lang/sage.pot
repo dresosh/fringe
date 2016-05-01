@@ -77,25 +77,25 @@ msgid "By"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Sage Starter Theme"
+msgid "Item9 Starter Theme"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "https://roots.io/sage/"
+msgid "https://item9creative.com"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Sage is a WordPress starter theme. <a href=\"https://github.com/roots/sage"
-"\">Contribute on GitHub</a>"
+"This is a custom theme created by Item9 Creative. <a href=\"https://item9creative.com"
+"\">Item9 Creative</a>"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Roots"
+msgid "Dre Sosh"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://roots.io/"
+msgid "https://item9creative.com/"
 msgstr ""
 
 #. Template Name of the plugin/theme
